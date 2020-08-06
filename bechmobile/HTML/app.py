@@ -22,7 +22,14 @@ def predict():
     print(final)
     prediction=model.predict(final)
     output='{}'.format(prediction)
-    return render_template('predictprice.html',pred='Your preditited price is {}'.format(output))
+    if output==1:
+        return render_template('predictprice.html',pred='Your predicted price is upto 5000')
+    if output==2:
+	    return render_template('predictprice.html',pred='Your phone predicted  price is in range 5000-10000')
+    if output==3:
+	    return render_template('predictprice.html',pred='Your phone predicted price is in range 10000-15000')
+    else:
+	    return render_template('predictprice.html',pred='Your preditited price is over 20,000')
 
 if __name__ == '__main__':
     app.run(debug=True)
