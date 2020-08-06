@@ -1,0 +1,37 @@
+html { font-size: calc(0.6em + .6vw); } 
+
+body{
+	background: linear-gradient(white,rgb(169,169,169));
+}
+section{
+  margin:1%;
+    padding:1%;
+}
+#header-nav ,footer{
+	border: 2px solid black;
+}
+h1{
+  text-align:center;
+}
+#aside{
+	display:inline-block;
+	height: 85vh;
+	width:100%;
+	color:rgb(216,216,216);
+	background: url(../img/mobile_header.jpg) no-repeat;
+	background-size: cover;
+}
+#aside h2{
+	margin-top: 70vh;
+	font-size: 3vw;
+}
+#aside:hover{
+	background: url(../img/mobile-image2.jpg) no-repeat;
+	background-size: cover;
+}
+footer{
+	clear: both;
+	text-align:center;
+	text-transform: uppercase;
+}
+
